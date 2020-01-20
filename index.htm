@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+     <h1 class="Txt">Check the console</h1>
+     <h2>Welcome back, how many miles did you go today?</h2>
+     <input type="number" id="distance">
+     <button onclick=checkSteps()>Check Steps</button>
+
+
+
+
+
+
+
+
+
+    <script>
+        const Invalid = NaN;
+        const checkSteps = () => { 
+          const userStepData = document.getElementById('distance');
+          console.log(parseFloat(userStepData.value));
+        if (userStepData.value===Invalid){
+            alert('Invalid Format');
+        }else{
+            alert('Procesing overall results');
+        }
+        }
+
+        
+    </script>
+</body>
+</html>
